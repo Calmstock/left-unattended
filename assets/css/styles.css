@@ -6,14 +6,17 @@
    CSS Custom Properties (Design Tokens)
    ---------------------------------------- */
 :root {
-  /* Colors */
+  /* Colors - Purple & Green palette */
   --color-bg: #FEFDFB;
-  --color-text: #2C2C2C;
+  --color-text: #363635;
   --color-text-secondary: #6B6B6B;
-  --color-accent: #E07A5F;
-  --color-accent-hover: #C96A52;
+  --color-accent: #4d8a7c;
+  --color-accent-hover: #3a6b5f;
   --color-border: #E8E6E3;
   --color-card-bg: #FFFFFF;
+  --color-header-bg: #592e83;
+  --color-header-text: #FFFFFF;
+  --color-header-hover: #c4f0c8;
 
   /* Typography */
   --font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -111,9 +114,9 @@ ul, ol {
    Header & Navigation
    ---------------------------------------- */
 .site-header {
-  background: var(--color-card-bg);
-  border-bottom: 1px solid var(--color-border);
-  padding: var(--spacing-sm) 0;
+  background: var(--color-header-bg);
+  border-bottom: none;
+  padding: var(--spacing-md) 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -126,13 +129,14 @@ ul, ol {
 }
 
 .site-logo {
-  font-size: 1.25rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-header-text);
 }
 
 .site-logo:hover {
-  color: var(--color-accent);
+  color: var(--color-header-hover);
 }
 
 .main-nav {
@@ -141,7 +145,7 @@ ul, ol {
 }
 
 .main-nav a {
-  color: var(--color-text);
+  color: var(--color-header-text);
   font-weight: 600;
   padding: var(--spacing-xs) 0;
   position: relative;
@@ -149,7 +153,7 @@ ul, ol {
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: var(--color-accent);
+  color: var(--color-header-hover);
 }
 
 .main-nav a.active::after {
@@ -159,7 +163,7 @@ ul, ol {
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--color-accent);
+  background: var(--color-header-hover);
 }
 
 /* Mobile nav toggle */
@@ -175,7 +179,7 @@ ul, ol {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--color-text);
+  background: var(--color-header-text);
   margin: 5px 0;
   transition: var(--transition);
 }
@@ -184,9 +188,9 @@ ul, ol {
    Footer
    ---------------------------------------- */
 .site-footer {
-  background: var(--color-card-bg);
-  border-top: 1px solid var(--color-border);
-  padding: var(--spacing-lg) 0;
+  background: var(--color-header-bg);
+  border-top: none;
+  padding: var(--spacing-xl) 0;
   margin-top: var(--spacing-xl);
 }
 
@@ -204,15 +208,16 @@ ul, ol {
 }
 
 .footer-links a {
-  color: var(--color-text-secondary);
+  color: var(--color-header-text);
+  font-weight: 600;
 }
 
 .footer-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-header-hover);
 }
 
 .footer-copyright {
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
 }
 
@@ -221,7 +226,7 @@ ul, ol {
    ---------------------------------------- */
 .hero {
   text-align: center;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) 0 var(--spacing-md);
 }
 
 .hero-tagline {
