@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Left Unattended</title>
+  <meta name="description" content="About Jen Comstock - UX researcher, cartoonist, and pastry enthusiast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Left Unattended</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" role="navigation">
+        <a href="workshops.html">Workshops</a>
+        <a href="comics.html">Comics</a>
+        <a href="pastry.html">Pastry</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1>About</h1>
+      </header>
+
+      <!-- Bio Section -->
+      <section class="bio-section">
+        <img src="assets/images/misc/JC_Headshot.jpeg" alt="Jen Comstock" class="bio-headshot">
+        <p>I am driven by curiosity about how things come to be, inspired by good design, and passionate about people. I studied cognitive psychology—memory, attention, and perception—in college and grad school, and continue to explore human behavior in my work as a UX researcher.</p>
+
+        <p>I've also been a cartoonist since an early age, with training from RISD and MassArt. I wrote a comic strip for my college newspaper and have since self-published an illustrated glossary of food and a collection of my MIT comics.</p>
+
+        <p>Between academic and professional pursuits, I spent time as a pastry cook in a high-end French-American restaurant. I still prepare desserts for holidays and special occasions, and now run hands-on cooking and baking workshops with neighbors in my home.</p>
+
+        <p>When I'm "left unattended," this is what I do.</p>
+
+        <p class="mt-md">
+          <a href="https://www.linkedin.com/in/jencomstock/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+          <a href="https://www.instagram.com/jensdigz/" target="_blank" rel="noopener" class="btn btn-secondary">Instagram</a>
+        </p>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="section" id="contact">
+        <h2 class="text-center mb-md">Get in Touch</h2>
+        <form action="https://formsubmit.co/jennifer.dimase@gmail.com" method="POST" style="max-width: 500px; margin: 0 auto;">
+          <!-- Honeypot field for spam protection -->
+          <input type="text" name="_honey" style="display:none">
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Name <span class="form-required">*</span></label>
+            <input type="text" id="contact-name" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email <span class="form-required">*</span></label>
+            <input type="email" id="contact-email" name="email" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message <span class="form-required">*</span></label>
+            <textarea id="contact-message" name="message" class="form-textarea" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav class="footer-links">
+          <a href="https://www.etsy.com/shop/LeftUnattendedComics" target="_blank" rel="noopener">Etsy</a>
+          <a href="https://www.lulu.com/spotlight/leftunattended" target="_blank" rel="noopener">Lulu</a>
+          <a href="https://www.linkedin.com/in/jencomstock/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/jensdigz/" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+        <p class="footer-copyright">&copy; 2026 Jen Comstock. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

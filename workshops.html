@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops | Left Unattended</title>
+  <meta name="description" content="Hands-on cooking and baking workshops in Jen Comstock's home kitchen. Group sessions and private events.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Left Unattended</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" role="navigation">
+        <a href="workshops.html" class="active">Workshops</a>
+        <a href="comics.html">Comics</a>
+        <a href="pastry.html">Pastry</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <img src="assets/images/headers/NFG_Banner.jpg" alt="Neighborfood Group workshop" class="page-header-image">
+        <div class="nfg-branding">
+          <img src="assets/images/misc/nfg_logo_orange_rgb.png" alt="Neighborfood Group" class="nfg-logo">
+        </div>
+        <h1>Workshops</h1>
+        <p>Connect with Acton-area neighbors and learn a range of cooking and baking techniques through hands-on workshops hosted in my home! Or request a private class in your kitchen for yourself, family, or friends.</p>
+      </header>
+
+      <!-- Workshop Types -->
+      <section class="workshop-cards">
+        <div class="workshop-card">
+          <h3>Group Workshops</h3>
+          <p>Join a small group of neighbors for a hands-on session in my home kitchen. We cook, we learn, we eat together.</p>
+          <p class="workshop-examples"><strong>Recent topics:</strong> Apple cider donuts, blueberry sorbet, strawberry ice cream, chocolate and marshmallow bunnies and eggs, zeppoli, cannoli, bagels, crème brûlée, gluten-free pasta, and chocolate cake!</p>
+        </div>
+
+        <div class="workshop-card">
+          <h3>Private Classes</h3>
+          <p>Want to host a private cooking or baking class? I bring the ingredients, recipes, and instruction to your kitchen—perfect for birthdays, team events, or a night in with friends.</p>
+          <p class="workshop-examples"><strong>Get in touch</strong> to plan something delicious.</p>
+        </div>
+      </section>
+
+      <!-- Signup Form -->
+      <section class="section" id="signup">
+        <h2 class="text-center mb-md">Sign Up</h2>
+        <form action="https://formsubmit.co/jennifer.dimase@gmail.com" method="POST" style="max-width: 600px; margin: 0 auto;" id="workshop-form">
+          <!-- Honeypot field for spam protection -->
+          <input type="text" name="_honey" style="display:none">
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Hidden field to identify workshop form -->
+          <input type="hidden" name="_subject" value="Workshop Inquiry">
+
+          <div class="form-group">
+            <label for="workshop-name" class="form-label">Name <span class="form-required">*</span></label>
+            <input type="text" id="workshop-name" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="workshop-email" class="form-label">Email <span class="form-required">*</span></label>
+            <input type="email" id="workshop-email" name="email" class="form-input" required>
+          </div>
+
+          <div class="form-group" id="interest-group">
+            <label class="form-label">I'm interested in... <span class="form-required">*</span></label>
+            <div class="form-checkbox-group">
+              <label class="form-checkbox">
+                <input type="checkbox" name="interest" value="next-workshop">
+                Learning about the next workshop
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="interest" value="mailing-list">
+                Joining the mailing list
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="interest" value="private-workshop">
+                Booking a private workshop
+              </label>
+            </div>
+            <p class="form-error" id="interest-error" style="display:none; color: var(--color-accent); font-size: 0.875rem; margin-top: 0.5rem;">Please select at least one option.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="referral" class="form-label">How did you hear about us? <span class="form-required">*</span></label>
+            <select id="referral" name="referral" class="form-select" required>
+              <option value="">Select one...</option>
+              <option value="facebook-acton-parents">Facebook: Acton Parents</option>
+              <option value="facebook-acton-friends">Facebook: Acton Friends</option>
+              <option value="facebook-acton-community">Facebook: Acton MA (Community Forum)</option>
+              <option value="community-kangaroo">Community Kangaroo</option>
+              <option value="macaroni-kid">Macaroni Kid</option>
+              <option value="nextdoor">Nextdoor</option>
+              <option value="friend">Friend</option>
+              <option value="flyer">Flyer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="comments" class="form-label">Comments or questions</label>
+            <textarea id="comments" name="comments" class="form-textarea" placeholder="Any dietary restrictions, preferred dates, or questions..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+      <!-- Photo Grid -->
+      <section class="section">
+        <h2 class="text-center mb-md">Photos from the Workshops</h2>
+        <p class="text-center text-secondary mb-md">In recent workshops, we've made apple cider donuts, blueberry sorbet, strawberry ice cream, chocolate and marshmallow bunnies and eggs, zeppoli, cannoli, bagels, crème brûlée, gluten-free pasta and chocolate cake!</p>
+        <div class="gallery-grid" id="workshop-gallery">
+          <p class="text-secondary text-center" style="grid-column: 1 / -1;">Loading gallery...</p>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section">
+        <h2 class="text-center mb-md">What Neighbors Are Saying</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p class="testimonial-quote">"If you're looking for a cooking/baking class, hit [Jen] up! We made homemade zeppola, and she made it seem super easy!!"</p>
+            <p class="testimonial-author">— Becky (Mar '23 Zeppole)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"Jen led a cake decorating workshop for small children and she was able to connect with them at their early learning stage, made it very hands on, fun and somehow still had a clean workspace at the end! I'd love to attend another of her workshops."</p>
+            <p class="testimonial-author">— Micah (Nov '22 Cake Decorating)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"Workshop was well-paced and inclusive to everyone's needs and wants. It was small enough where everyone could participate in different ways. I also appreciated the scientific explanations!"</p>
+            <p class="testimonial-author">— Tram (Jul '19 Ice Cream)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"The process was very organized. We all participated in every phase of the project (trying out our training wheels). I loved meeting people who I may never have run into anywhere else!"</p>
+            <p class="testimonial-author">— Catherine (Feb '19 Macaroons)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"I loved how professional you were. Everything that you had – the two kinds of water, the coffee and tea, the flowers, the beautifully set table, the aprons and recipe cards – all of that was extremely well done and thoughtful."</p>
+            <p class="testimonial-author">— Glen (Jan '19 Lasagna & Baklava)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"This was so much fun. I really learned a lot and met some great folks. It was really cool getting to learn in a home environment rather than a big kitchen or a classroom. Everyone seemed to have a great time, and it was awesome to finish the class with a meal around the table."</p>
+            <p class="testimonial-author">— Dylan (Oct '18 Fresh Pasta)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"My husband and son were really impressed with and grateful for your clear, encouraging and organized instruction and it was a special pleasure to enjoy the (amazingly delicious) fruit of your collective labors together."</p>
+            <p class="testimonial-author">— Naama (Jun '18 Private Class)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"Loved everything about it: the adorably portioned single recipes, the camaraderie, the free-flowing questions and answers, the delicious finished products, the two-sided recipe cards, and getting to meet neighbors."</p>
+            <p class="testimonial-author">— Emily (Mar '18 Brunch)</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"Jen creates a genuinely warm atmosphere in which neighbors can connect with each other. She has prepared the recipe ingredients and planned the order of operations such that the timing is managed perfectly for the 2 hours we are together. Her sessions are a perfect combination of fun, inspiration, culinary learning, connecting with others and an opportunity for me to have fun with my 13 year old daughter outside of the house and away from technology!"</p>
+            <p class="testimonial-author">— Laura (Mar '18 Brunch)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Press Mention -->
+      <section class="press-mention">
+        <h4>In the Press</h4>
+        <p>"JP Resident Channels the Power of Food" — <a href="https://jamaicaplaingazette.com/2018/11/09/jp-resident-channels-the-power-of-food/" target="_blank" rel="noopener">Read the article</a></p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&lsaquo;</button>
+      <img src="" alt="">
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">&rsaquo;</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav class="footer-links">
+          <a href="https://www.etsy.com/shop/LeftUnattendedComics" target="_blank" rel="noopener">Etsy</a>
+          <a href="https://www.lulu.com/spotlight/leftunattended" target="_blank" rel="noopener">Lulu</a>
+          <a href="https://www.linkedin.com/in/jencomstock/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/jensdigz/" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+        <p class="footer-copyright">&copy; 2026 Jen Comstock. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Load workshop images from JSON
+    (function() {
+      const gallery = document.getElementById('workshop-gallery');
+
+      fetch('data/workshop.json')
+        .then(response => response.json())
+        .then(images => {
+          gallery.innerHTML = images.map(img => `
+            <div class="gallery-item">
+              <img
+                src="assets/images/workshop/${img.filename}"
+                alt="${img.title || 'Workshop photo'}"
+                data-full-src="assets/images/workshop/${img.filename}"
+                loading="lazy"
+              >
+            </div>
+          `).join('');
+
+          // Re-initialize gallery handlers after loading
+          initGalleryHandlers();
+        })
+        .catch(error => {
+          console.error('Error loading workshop images:', error);
+          gallery.innerHTML = '<p class="text-secondary text-center" style="grid-column: 1 / -1;">Unable to load gallery. Please try again later.</p>';
+        });
+
+      function initGalleryHandlers() {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.querySelector('.lightbox');
+
+        function getVisibleImages() {
+          return Array.from(galleryItems).map(item => {
+            const img = item.querySelector('img');
+            return {
+              src: img.dataset.fullSrc || img.src,
+              alt: img.alt
+            };
+          });
+        }
+
+        galleryItems.forEach((item, index) => {
+          item.addEventListener('click', function() {
+            const visibleImages = getVisibleImages();
+            if (window.openLightbox) {
+              window.openLightbox(visibleImages, index);
+            }
+          });
+
+          item.setAttribute('tabindex', '0');
+          item.setAttribute('role', 'button');
+          item.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              item.click();
+            }
+          });
+        });
+      }
+    })();
+
+    // Validate checkbox group - require at least one selection
+    (function() {
+      const form = document.getElementById('workshop-form');
+      const checkboxes = document.querySelectorAll('input[name="interest"]');
+      const errorMsg = document.getElementById('interest-error');
+
+      form.addEventListener('submit', function(e) {
+        const isChecked = Array.from(checkboxes).some(cb => cb.checked);
+        if (!isChecked) {
+          e.preventDefault();
+          errorMsg.style.display = 'block';
+          document.getElementById('interest-group').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+
+      // Hide error when any checkbox is checked
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', function() {
+          if (Array.from(checkboxes).some(c => c.checked)) {
+            errorMsg.style.display = 'none';
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

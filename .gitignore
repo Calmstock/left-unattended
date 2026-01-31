@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Build artifacts
+files/
+
+# Project docs (not needed for deploy)
+LeftUnattended_Build_Brief.md
+LeftUnattended_Comics_Categorization.csv
